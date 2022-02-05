@@ -48,9 +48,6 @@ $arr_chat = $query->fetchAll(PDO::FETCH_ASSOC);
                 border: 0;
                 box-shadow: inset 0 15px 12px -11px rgba(0,0,0,0.15);
             }
-
-
-
         </style>
     </head>
     <body class="mod-bg-1 mod-nav-link ">
@@ -79,12 +76,6 @@ $arr_chat = $query->fetchAll(PDO::FETCH_ASSOC);
                                     </form>
                                 </div>
                                 <?php 
-    
-
-                        //Добавление параметров в БД
-                    
-
-     
                         
                     //Выборка из БД
                     foreach($arr_chat as $chat){
@@ -92,8 +83,6 @@ $arr_chat = $query->fetchAll(PDO::FETCH_ASSOC);
                         '<p>'.$chat['text'].'</p>'.'<br>'.'<hr />'.
                         '<div class="tim">'.$chat['date'].'</div>'.'</div>';
                     }
-
-
                         ?>
                             </div>
                         </div>
